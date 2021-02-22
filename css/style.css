@@ -1,0 +1,160 @@
+:root {
+    --cyan: hsl(179, 62%, 43%);
+    --bright-yellow: hsl(71, 73%, 54%);
+    --light-gray:hsl(204, 43%, 93%);
+    --grayish-blue:hsl(218, 22%, 67%);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Karla", sans-serif;
+    font-size: 16px;
+    background: rgb(230, 239, 246);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    width: 635px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.top {
+    background: white;
+    padding: 40px;
+    width: 635px;
+    border-radius: 15px 15px 0 0;
+}
+
+.top__title {
+    color: var(--cyan);
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.top__subtitile {
+    color:var(--bright-yellow);
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.top__text {
+    color:var(--grayish-blue);
+}
+
+.top__text--one {
+    margin-bottom: 10px;
+}
+
+.bottom {
+    display: flex;
+    width: 635px;
+}
+
+.left {
+    background: var(--cyan);
+    padding: 40px;
+    flex:1;
+    border-radius: 0 0 0 15px;
+    
+}
+
+.left__title {
+    color: var(--light-gray);
+    font-weight: 700;
+}
+
+.left__price {
+    color: var(--light-gray);
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+}
+
+.left__price > span {
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.left__text {
+    color:var(--light-gray);
+    margin-bottom: 30px;
+}
+
+.right {
+    /*background:hsl(179, 67%, 47%);*/
+    background: rgb(74, 190, 189);
+    padding: 40px;
+    flex:1;
+    border-radius: 0 0 15px 0;
+}
+
+.right__title {
+    color: var(--light-gray);
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.right__text {
+    list-style-type: none;
+    margin: 0;
+    color:var(--light-gray);
+    padding-left: 0;
+}
+
+ul > li {margin-bottom: 3px;}
+
+.btn {
+    background:var(--bright-yellow);
+    padding: 15px 80px;
+    width: 100%;
+    margin: 0 auto;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    color:var(--light-gray);
+    font-weight: 700;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
+
+}
+
+@media screen and (max-width:650px) {
+
+    .top {
+        max-width: 310px;
+        border-radius: 7px 7px 0 0;
+    }
+
+    .left {
+        width: 310px;
+        border-radius: 0;
+    }
+
+    .right {
+        width: 310px;
+        border-radius:  0 0 7px 7px;
+    }
+
+    .bottom {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+}
